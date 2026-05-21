@@ -1,0 +1,34 @@
+# 8-bit Verilog ALU
+
+This project is an 8-bit Arithmetic Logic Unit (ALU) designed and simulated in Verilog. The ALU supports arithmetic, logic, shift, compare, and pass-through operations, and includes basic CPU-style status flags.
+
+This was built as my first digital design project to learn Verilog, simulation, testbenches, and the fundamentals of computer architecture.
+
+## Features
+
+- 8-bit input operands: `A` and `B`
+- 4-bit opcode input
+- Arithmetic operations: ADD, SUB, INC, DEC
+- Logic operations: AND, OR, XOR, NOT
+- Shift operations: shift left, shift right, arithmetic shift right
+- Compare and pass-through operations
+- Status flags:
+  - `Z`: Zero flag
+  - `C`: Carry flag
+  - `V`: Overflow flag
+  - `N`: Negative flag
+- Verilog testbench included
+- VCD waveform output generated for simulation analysis
+
+## Project Structure
+
+```text
+8-bit-Verilog-ALU/
+├── SRC/
+│   └── alu_top.v
+├── TB/
+│   └── alu_tb.v
+├── Waveforms/
+│   └── alu_tb.vcd
+├── .gitignore
+└── README.md
