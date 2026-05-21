@@ -2,7 +2,7 @@
 
 module alu_tb;
 
-    // Declare inputs as reg (we drive these)
+    // Declare inputs as reg 
     reg [7:0] A;
     reg [7:0] B;
     reg [3:0] opcode;
@@ -95,7 +95,7 @@ module alu_tb;
 
         // --- UTILITY ---
 
-        // PASS: just passes A through
+        // PASS: passes A through
         A = 8'd42; B = 8'd0; opcode = 4'b1111; #10;
         $display("PASS\t\t%0d\t-\t%0d\t%b %b %b %b", A, result, Z, C, V, N);
 
