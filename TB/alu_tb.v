@@ -7,11 +7,11 @@ module alu_tb;
     reg [7:0] B;
     reg [3:0] opcode;
 
-    // Declare outputs as wire (we just listen to these)
+    // Declare outputs as wire 
     wire [7:0] result;
     wire Z, C, V, N;
 
-    // Hook up the ALU (connect testbench to alu_top)
+    // Connect testbench to alu_top
     alu_top uut (
         .A(A),
         .B(B),
@@ -23,7 +23,7 @@ module alu_tb;
         .N(N)
     );
 
-    // Dump waveforms to a file so GTKWave can read it
+    // Apply Waveforms to file
     initial begin
         $dumpfile("alu_tb.vcd");
         $dumpvars(0, alu_tb);
